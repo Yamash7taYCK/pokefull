@@ -1,1 +1,1 @@
-# pokedexfull.github.io
+# pokefull

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokédex Full</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <div class="container">
+      <h1>Pokédex</h1>
+
+      <div class="main-layout">
+        <div class="pokemon-section">
+          <div class="pokemon-controls">
+            <div class="input-area">
+              <input
+                type="text"
+                id="pokemonInput"
+                placeholder="Digite nome ou id do Pokémon"
+                autocomplete="off"
+              >
+              <button id="buscarBtn" type="button">Buscar</button>
+              <button id="randomBtn" type="button">Aleatório</button>
+            </div>
+
+            <div id="sugestoes" class="sugestoes"></div>
+
+            <div class="nav-area">
+              <button id="prevBtn" type="button">⬅</button>
+              <button id="nextBtn" type="button">➡</button>
+            </div>
+          </div>
+
+          <div id="resultado"></div>
+        </div>
+
+        <aside class="sidebar">
+          <div class="box">
+            <h2>Favoritos</h2>
+            <div id="favoritosLista"></div>
+          </div>
+
+          <div class="box">
+            <h2>Histórico</h2>
+            <div id="historicoLista"></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
